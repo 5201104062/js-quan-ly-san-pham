@@ -1,0 +1,135 @@
+/* ===========================================================
+   Bài 3.3 – Ứng dụng Quản lý sản phẩm
+   =========================================================== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  margin: 0;
+  padding: 30px 15px;
+}
+
+.ung-dung {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px 24px 24px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+/* Hàng gồm ô nhập + nút */
+.hang-nhap {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.hang-nhap input {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 10px;
+  font-size: 15px;
+  border: 1px solid #bbb;
+}
+
+button {
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #111;
+}
+
+button.phu {
+  background: #999;
+}
+
+#thong-bao {
+  min-height: 18px;
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+
+#thong-bao.thanh-cong {
+  color: #2e7d32;
+}
+
+#thong-bao.loi {
+  color: #c62828;
+}
+
+/* Tiêu đề bảng + số lượng sản phẩm nằm 2 đầu */
+.tieu-de-bang {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#dem-san-pham {
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 13px;
+  padding: 8px;
+  border-bottom: 2px solid #bbb;
+}
+
+td {
+  padding: 6px 8px;
+}
+
+/* Cột nút: vừa đủ rộng; cột tên chiếm phần còn lại */
+td:nth-child(3),
+td:nth-child(4) {
+  width: 1%;
+  white-space: nowrap;
+}
+
+/* Màu xen kẽ các dòng giống Hình 3.4 */
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+tbody tr:nth-child(even) {
+  background: #ddd;
+}
+
+td.ten {
+  cursor: pointer;
+}
+
+td.ten:hover {
+  text-decoration: underline;
+}
+
+/* Dòng đang được sửa */
+tbody tr.dang-sua {
+  background: #fff1b8;
+}
+
+td.trong {
+  text-align: center;
+  color: #777;
+  padding: 16px;
+}

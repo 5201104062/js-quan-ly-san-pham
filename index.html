@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý sản phẩm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ung-dung">
+    <!-- Bước 5: form thêm sản phẩm -->
+    <h2>Add New Product</h2>
+    <form id="form-them" class="hang-nhap">
+      <input type="text" id="ten-moi" placeholder="New Product">
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Bước 6: form sửa sản phẩm, chỉ hiện khi chọn một sản phẩm -->
+    <div id="khung-sua" hidden>
+      <h2>Edit Product</h2>
+      <form id="form-sua" class="hang-nhap">
+        <input type="text" id="ten-sua">
+        <button type="submit">Update</button>
+        <button type="button" id="nut-huy" class="phu">Cancel</button>
+      </form>
+    </div>
+
+    <p id="thong-bao"></p>
+
+    <!-- Bước 4: bảng danh sách sản phẩm -->
+    <div class="tieu-de-bang">
+      <h2>Display All Product</h2>
+      <span id="dem-san-pham"></span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Product Name</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="danh-sach"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
